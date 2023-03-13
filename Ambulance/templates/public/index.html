@@ -1,0 +1,303 @@
+{% extends 'public/base.html' %}
+{% load static %}
+{% block content %}
+<div class="container-fluid">
+  <div id="carouselExampleTouch" class="carousel slide" data-mdb-touch="false">
+    <div class="carousel-indicators">
+      <button type="button" data-mdb-target="#carouselExampleTouch" data-mdb-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-mdb-target="#carouselExampleTouch" data-mdb-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-mdb-target="#carouselExampleTouch" data-mdb-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-mdb-interval="2000">
+        <img src="{%static 'images/avenue ambulance.jpg'%}" class="d-block w-100 img" alt="" />
+        <div class="carousel-caption d-none d-md-block">
+          <h1 class="black">FIRST AID TIP</h1>
+          <p class="black">Applying Iceblocks you can help people with sprains.If the<br>Swelling doesn't
+            improve,specialized care will be required.</p>
+        </div>
+      </div>
+      <div class="carousel-item" data-mdb-interval="5000">
+        <img src="{%static 'images/Ambulance2.jpeg'%}" class="d-block img" alt="" />
+        <div class="carousel-caption d-none d-md-block">
+          <h1>FIRST AID TIP</h1>
+          <p><strong>Neccessary Supplies should be close at hand.You'll require<br>bandages,gauzes,thermometer,cotton
+              wool,antacid,<br>Scissors Etc</strong></p>
+        </div>
+      </div>
+      <div class="carousel-item" data-mdb-interval="1000">
+        <img src="{%static 'images/critical care.jpg'%}" class="d-block img" alt="" />
+        <div class="carousel-caption d-none d-md-block">
+          <h1 class="green">FIRST AID TIP</h1>
+          <p class="green"><strong>
+              Diarrhoea leads to rapid dehydration.The primary remedy<br>Would be to rehydrate the person who is
+              suffering.Anti<br>diarrhoea medication is helpful in this case.</strong></p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-mdb-target="#carouselExampleTouch" data-mdb-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-mdb-target="#carouselExampleTouch" data-mdb-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  <div class="hero">
+    <h1 class="okoa">WHY NIOKOE EMMERGENCY RESPONSE AMBULANCE</h1>
+    <div class="row">
+      <div class="col-md-7 pb-5 slogan text-dark">
+        We seek to save life for everyone to be a part
+        <span id="yellow"> of saving life by availing</span> the necessary
+        required
+        Ambulance <span id="yellow">and First Aid services.</span>
+      </div>
+      <div class="col-md-4"></div>
+    </div>
+    <p class="order-btn">
+      <button type="button" class="btn btn-outline-dark btn-rounded" data-mdb-ripple-color="dark" id="order-btn">Find
+        Out</button>
+    </p>
+
+    <div class="row">
+      <div class="row">
+        <h4 class="text-center text-warning fs-2"> Featured Services</h4>
+
+      </div>
+      <div class="row">
+        <p class="text-center text-white">What our owners offer</p>
+      </div>
+      <div class="row p-4">
+        <div class="col-md-4 text-center mb-5">
+          <p>
+            <i class="fa-regular fa-person-falling-burst"></i>
+          </p>
+          <p class="fs-4 text-white">Accident and Emmergency</p>
+
+
+        </div>
+
+        <div class="col-md-4 text-center  mb-4">
+          <p>
+            <i class="fa-solid fa-mask-ventilator"></i>
+          </p>
+          <p class="fs-4 text-white">Event Standby</p>
+
+
+        </div>
+        <div class="col-md-4 text-center  mb-4">
+          <p>
+            <i class="fa-solid fa-bed-pulse"></i>
+          </p>
+          <p class="fs-4 text-warning">Patient Transport Services</p>
+
+
+        </div>
+
+        <div class="col-md-4 text-center  mb-4">
+          <p>
+            <i class="fa-sharp fa-solid fa-truck-medical"></i>
+          </p>
+          <p class="fs-4 text-white">Basic life support Ambulance</p>
+
+
+        </div>
+
+        <div class="col-md-4 text-center  mb-4">
+          <p>
+            <i class="fa-solid fa-certificate fa-3x text-warning"></i>
+          </p>
+          <p class="fs-4 text-white">Quality Services</p>
+
+
+        </div>
+
+        <div class="col-md-4 text-center  mb-4">
+          <p>
+            <i class="fa-solid fa-money-bill-1-wave fa-3x text-white"></i>
+          </p>
+          <p class="fs-4 text-warning">Low service Pay-Rate</p>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="row mt-5">
+    <div class="col-lg-4 col-md-6 mb-4">
+      <div class="card">
+        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+          <img src="{%static 'images/KNH.jpg'%}" class="img-fluid" alt="pluoghing machinery" id="image2" />
+          <a href="#!">
+            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+          </a>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Accident and Emmergency as a service</h5>
+          <p class="card-text">
+            We are eqquiped with a fleet of mordern ambulance ready to tackle any situation.
+          </p>
+          <a href="#!" class="btn btn-warning">View More</a>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="col-lg-4 col-md-6 mb-4">
+      <div class="card">
+        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+          <img src="{% static 'images/ambulance.png'%}" class="img-fluid" alt="pluoghing machinery" id="image2" />
+          <a href="#!">
+            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+          </a>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Event Standby as a service</h5>
+          <p class="card-text">
+            We give event organisers a piece of mind that their attendees are in the safe hands.
+          </p>
+          <a href="#!" class="btn btn-warning">View More</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6 mb-4">
+      <div class="card">
+        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+          <img src="{%static 'images/Ambulance1.jpeg'%}" class="img-fluid" id="image2" />
+          <a href="#!">
+            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+          </a>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Patience transport as a service</h5>
+          <p class="card-text">
+            We offer Patient transport services at an affordable price.
+          </p>
+          <a href="#!" class="btn btn-warning">View More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 ">
+    <h3 id="clients">WHAT OUR CUSTOMERS SAY</h3>
+    {% for comment in comments %}
+    <div class="col-md-3 mx-auto">
+      <div class="card p-4" id="comment-card">
+        <p class="card-title text-white">{{comment.user_name}}</p>
+        <p class="text-warning">"{{comment.content}}"</p>
+        <a class="btn btn-outline-warning btn-sm mb-3" id="c">
+          <h3>{{comment.rating }}</h3>
+          <span class="sc">My service Rate</span>
+        </a>
+
+      </div>
+
+    </div>
+    {% endfor %}
+
+  </div>
+
+
+  <!--Section: Content-->
+  <div class="row" id="subscribe-form">
+    <div class="col-md-6 mx-auto">
+      <section class="subscribe">
+        <form class="feedback-form" action="" method="POST">
+          <!-- Name input -->
+          <div class="form-outline mb-4">
+            <input type="text" id="form4Example1" class="form-control" />
+            <label class="form-label" for="form4Example1">Name</label>
+          </div>
+
+          <!-- Email input -->
+          <div class="form-outline mb-4">
+            <input type="email" id="email" class="form-control" name="email" />
+            <label class="form-label" for="form4Example2">Email address</label>
+          </div>
+
+          <!-- Message input -->
+          <div class="form-outline mb-4">
+            <textarea class="form-control" id="form4Example3" rows="4" name="feedback"></textarea>
+            <label class="form-label" for="form4Example3">Message</label>
+          </div>
+          <!-- Submit button -->
+          <button type="submit" class="btn btn-primary btn-block mb-4 fs-5">Send <i
+              class="fa-solid fa-paper-plane"></i></button>
+        </form>
+
+      </section>
+    </div>
+  </div>
+  <!-- footer section -->
+
+  <footer class="bg-dark text-center text-white">
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+  
+        <!-- Twitter -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-twitter"></i
+        ></a>
+  
+        <!-- Google -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-google"></i
+        ></a>
+  
+        <!-- Instagram -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-instagram"></i
+        ></a>
+  
+        <!-- Linkedin -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
+  
+        
+      </section>
+      <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: red;">
+      © 2023 Copyright:
+      <a class="text-white" href="https://niokoeambulance.com/">Niokoeambulance.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+</div>
+
+{% endblock content %}
+
+
+<!-- 1. User Authentication.
+2. Home module / Home page - An outline of the services provided by the application.
+3. Machinery Owner panel- Enables the machinery owner to upload and set availability of 
+ machinery.
+4. Booking Module- For booking purposes.
+5. Feedback module - User feedback.
+6. Users panel - User can be able to see the available machinery for hire and the times they are available.
+
+7. machine available or not()
+8.User profile()
+9.CRUD operations. 
+10.Rating and review
+11.Email feature-->

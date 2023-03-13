@@ -1,0 +1,24 @@
+{% extends "public/base.html" %}
+{% load bootstrap4 %}
+{% load static %}
+{% block title %} Neighbour | update_ambulance {% endblock title%}
+{% block content %}
+<div class="col-md-8 mx-auto mt-5 shadow p-5">
+
+    <h4 class="text-dark">Ambulance Update Details</h4>
+    <hr>
+    <div class="row">
+        <!-- <div class="col-md-3"></div> -->
+        <div class="col-md-6 update-profile mx-auto mb-3 p-2">
+            <form action="" method="POST" enctype="multipart/form-data">
+                {%csrf_token%}
+
+                {% bootstrap_form form2 %}
+                <input type="submit" class="btn btn-primary btn-sm" value="Save Ambulance Update">
+                <a href="{% url 'home' %}"><button type="button" class="btn btn-outline-info btn-sm"><i
+            class="fa-solid fa-angles-left"></i>Back Home</button></a>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

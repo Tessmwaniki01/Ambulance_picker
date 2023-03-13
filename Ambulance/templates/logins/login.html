@@ -1,0 +1,76 @@
+{% extends 'public/base.html' %}
+{% load static %}
+{% load bootstrap4 %}
+{% block content %}
+
+<div class="container-fluid d-flex justify-content-center align-items-center" id="login-page">
+    <div class="col-md-7 mx-auto">
+        <div>
+            {% if messages %}
+            {% for message in messages %}
+            <div class="alert {{message.tags}} alert-success m-1" role="alert" style="font-size: medium;">
+                {{message}}
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            {% endfor %}
+            {% endif %}
+        </div>
+        <div class="card login-card px-5 pt-2 mt-5">
+            <p class="text-center">
+                <img src="{% static 'images/logo.jpeg'%}" alt="logo" id="logo-login">
+            </p>
+            <h4 id="login-slogan">NIOKOE EMMERGENCY RESPONSE APP</h4>
+            <p class="text-center" id="par">LOGIN</p>
+
+            <form method="POST" class="col-md-10 mx-auto">
+                {% csrf_token %}
+                <div class="form-group first">
+                    <label for="username">Username</label>
+                    {{ form.username }}
+                </div>
+                <div class="form-group last mb-4">
+                    <label for="username">Password</label>
+                    {{ form.password }}
+                </div>
+                
+                <input type="submit" value="LOG IN TO NIOKOE AMBULANCE APP" class="btn btn-pill text-white btn-block" id="login-buuton">
+            </form>
+
+            <!-- Register buttons -->
+            <div class="text-center p-2">
+                <p>Not a member? <a href="{% url 'register' %}">Register</a></p>
+                <p>or sign up with:</p>
+                <button type="button" class="btn btn-primary btn-floating mx-1">
+                    <i class="fab fa-facebook-f small-icons"></i>
+                </button>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
+
+<!-- <form  method="post">
+    {% csrf_token %}
+  <div class="form-group first">
+    <label for="username">Username</label>
+      {{ form.username }}
+  </div>
+  <div class="form-group last mb-4">
+    <label for="username">Password</label>
+    {{ form.password }}
+  </div>
+
+  <div class="d-flex mb-5 align-items-center">
+    <label class="control control--checkbox mb-0"><span class="caption">Remember me</span>
+      <input type="checkbox" checked="checked"/>
+      <div class="control__indicator"></div>
+    </label>
+    <span class="ml-auto"><a href="#" class="forgot-pass">Forgot Password</a></span>
+  </div>
+
+  <input type="submit" value="Log In" class="btn btn-pill text-white btn-block btn-primary">
+</form> -->

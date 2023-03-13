@@ -1,0 +1,45 @@
+{% extends 'public/base.html' %}
+{% load static %}
+{% block content %}
+<div class="container-fluid" id="services-page">
+    <div class="row mb-4 ">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            {% for ambulance in ambulance %}
+            <div class="col">
+                <div class="card h-100 mvb-3">
+                    <img src="{{ambulance.image.url}}" class="card-img-top" alt="ambulance" />
+                    <div class="card-body">
+                        <h5 class="card-title"></h5>
+                        <p class="card-text">
+                            {{ambulance.ambulance_properties}}.
+                        </p>
+                    </div>
+                    <div class="col-md-8 mb-3">
+                        <a href="{% url 'single_ambulance' ambulance.id %}" class="btn btn-outline-success">Ambulance Description</a>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            {% endfor %}
+        </div>
+
+    </div>
+</div>
+
+{% endblock content %}
+
+
+<!-- 1. User Authentication.
+2. Home module / Home page - An outline of the services provided by the application.
+3. Machinery Owner panel- Enables the machinery owner to upload and set availability of 
+ machinery.
+4. Booking Module- For booking purposes.
+5. Feedback module - User feedback.
+6. Users panel - User can be able to see the available machinery for hire and the times they are available.
+
+7. ambulance available or not()
+8.User profile()
+9.CRUD operations. 
+10.Rating and review
+11.Email feature-->

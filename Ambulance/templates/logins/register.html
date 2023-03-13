@@ -1,0 +1,76 @@
+{% extends 'public/base.html' %}
+{% load static %}
+{% block content %}
+<div class="container-fluid justify-content-center align-items-center" id="register-page">
+
+  <div class="col-md-6 mx-auto">
+    <div class="card p-4">
+      <!-- <div class=" card "> -->
+      <p class="text-center">
+        <img src="{%static 'images/logo.jpeg'%}" alt="logo" id="logo-login">
+      </p>
+      <h4 class="mb-4 text-center">
+        <strong>NIOKOE EMMERGENCY RESPONSE AMBULANCE</strong>
+      </h4>
+      <p class="text-center" id="par">REGISTER</p>
+
+
+      <div>
+        {% if messages %}
+        {% for message in messages %}
+        <div class="alert {{message.tags}} m-1 alert-danger mb-3" role="alert" style="font-size: medium;">
+          {{message}}
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        {% endfor %}
+        {% endif %}
+      </div>
+      <form method="post">
+        {% csrf_token %}
+        <div class="form-group first">
+          <label for="username">Username</label>
+          {{ form.username }}
+        </div>
+        <div class="form-group first">
+          <label for="email">Email</label>
+          {{ form.email}}
+        </div>
+        <div class="form-group last mb-4">
+          <label for="password">Password</label>
+          {{ form.password1 }}
+        </div>
+        <div class="form-group last mb-4">
+          <label for="password">confirm Password</label>
+          {{ form.password2 }}
+        </div>
+        <div class="row">
+          <div class="col-md-2">
+            <label class="control control--checkbox mb-0"><span class="caption">Admin</span>
+              {{ form.is_admin }}
+              <div class="control__indicator"></div>
+            </label>
+          </div>
+          <div class="col-md-4">
+            <label class="control control--checkbox mb-0"><span class="caption">Public User</span>
+              {{ form.is_public }}
+              <div class="control__indicator"></div>
+            </label>
+          </div>
+          <div class="col-md-2">
+            <label class="control control--checkbox mb-0"><span class="caption">Owner</span>
+              {{ form.is_owner }}
+              <div class="control__indicator"></div>
+            </label>
+          </div>
+        </div>
+        <span class="text-error">{{ form.errors }}</span>
+        <input type="submit" value="Register" class="btn btn-pill text-white btn-block btn-primary" id="login-buuton">
+      </form>
+    </div>
+  </div>
+
+</div>
+
+{% endblock content %}

@@ -1,0 +1,86 @@
+{% extends 'public/base.html' %}
+{% load static %}
+{% block content %}
+<div class="container-fluid">
+    <div class="row mb-4">
+    </div>
+    <div class="col-md-12">
+        <div class="row">
+            <div class="col-md-7">
+                <p>{{single_ambulance.ambulance_name }}</p>
+                <div class="card">
+                    <img src="{{single_ambulance.image.url}}" class="card-img-top" alt="" id="machine-image">
+                </div>
+
+            </div>
+            <div class="col-md-5">
+                <div class="row">
+                    <p class="text-center">
+                        {{single_ambulance.ambulance_properties}}
+                    </p>
+                </div>
+                <div class="row mb-4 ps-5 pt-3">
+                    <!-- Availability -->
+                    <a class="btn btn-outline-right btn-sm col-md-4 me-3 mb-3" id="c">
+                        <h5>{{single_ambulance.availability }}</h5>
+                        <span class="sc">Availability</span>
+                    </a>
+
+                    <!-- Hire price -->
+                    <a class="btn btn-outline-success btn-sm col-md-4 me-3 mb-3" id="c">
+                        <h5>{{single_anv.hire_price }}</h5>
+                        <span class="sc">Day Hire Price</span>
+                    </a>
+
+                    <!-- accident_pay_rate -->
+                    <a class="btn btn-outline-primary btn-sm col-md-4 me-3 mb-3" id="c">
+                        <h5>{{single_ambulance.accident_pay_rate }}</h5>
+                        <span class="sc">Accident Price</span>
+                    </a>
+
+                    <!-- basic_life_support_pay_rate -->
+                    <a class="btn btn-outline-secondary btn-sm col-md-4 me-3 mb-3" id="c">
+                        <h5>{{single_ambulance.basic_life_support_pay_rate }}</h5>
+                        <span class="sc">Basic_life_support_ Price</span>
+                    </a>
+
+
+                    <!-- events_pay_rate -->
+                    <a class="btn btn-outline-warning btn-sm col-md-4 me-3  mb-3" id="c">
+                        <h5>{{single_ambulance.events_pay_rate }}</h5>
+                        <span class="sc">Events Price</span>
+                    </a>
+
+                    <!-- patient_pay_rate -->
+                    <a class="btn btn-outline-dark btn-sm col-md-4 me-3  mb-3" id="c">
+                        <h5>{{single_ambulance.patient_transport_pay_rate }}</h5>
+                        <span class="sc">Transportation Price</span>
+                    </a>
+                    <!-- driver_name -->
+                    <a class="btn btn-outline-info btn-sm col-md-4 me-3 mb-3" id="c">
+                        <h5>{{single_ambulance.driver_name }}</h5>
+                        <span class="sc">Driver Name</span>
+                    </a>
+
+                </div>
+                <hr>
+                <div class="row ps-5">
+                    <div class="col-md-6">
+                        <a href="{% url 'comment' single_ambulance.id %}" class="btn btn-warning">Comment & Rate</a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="{% url 'order' single_ambulance.id %}" class="btn btn-success">Book / Hire</a>
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+{% endblock content %}

@@ -1,0 +1,21 @@
+{% extends 'public/base.html' %}
+{% load static %}
+{% load bootstrap4 %}
+{% block content %}
+
+<div class="container-fluid mt-5 mb-3">
+    <div class="col-md-7 mx-auto shadow mb-4">
+        <h1 id="order-title" class="text-center">Ambulance Hire Form</h1>
+
+        <div class="p-4 form_container">
+            <form action="" method="POST">
+                {% csrf_token %}
+                <div class="col-6 offset 3 mb-3">{% bootstrap_form form3 %}</div>
+
+                <button type="submit" class="btn btn-warning fw-bold">Hire Ambulance</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
