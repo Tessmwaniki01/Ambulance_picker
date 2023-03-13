@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Plus&display=swap');
+
+*{
+    /* font-family: 'Chakra Petch', sans-serif; */
+    /* font-family: 'Gentium Plus', serif; */
+    font-family: 'Times New Roman', Times, serif;
+}
+.hero{
+    background-color: #e40808;
+    border-radius: 100% 0% 100% 0% / 66% 100% 0% 34%  ;
+}
+#register-btn{
+    font-weight: 900;
+    font-size: 3vh;
+}
+strong{
+    color: #000;
+    font-weight: 900;
+    font-size: 5vh;
+}
+#login-slogan{
+    color: #000;
+    font-weight: 900;
+    font-size: 5vh;
+    text-align: center;
+    padding: 3%;
+}
+#login-form{
+    font-size: 3vh;
+    font-weight: 600;
+    background-color: #cc0000;
+}
+#logo-login{
+    height: 100px;
+}
+#logo{
+    height: 35px;
+    width: 35px;
+    border: 1px solid #fdc730;
+    
+
+}
+#nav{
+    /* background-color: #133831; */
+    background-color: hsl(0, 94%, 48%);
+}
+li{
+    padding: 0 10%;
+}
+
+.img{
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+}
+/* .okoa{
+    padding-top:3%;
+    padding-left: 3%;
+} */
+.slogan{
+    padding-bottom: 4%;
+    padding-top: 2%;
+    padding-left: 3%;
+    font-size: 3vh;
+}
+#order-btn{
+    width: 130px;
+    font-size: 3vh;
+    font-weight: 700;
+
+}
+#order-btn:hover{
+    background-color: #000;
+    /* color: #fff; */
+    color: #fdc730;
+    outline: 1px solid #fdc730;
+}
+.order-btn{
+    padding-left: 3%;
+
+}
+ul li{
+    list-style:none ;
+}
+#image2{
+    height: 210px;
+    object-fit: cover;
+    width: 100%;
+}
+#profile_pic{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    box-shadow: 4px 4px 4px 3px;
+
+}
+#bio{
+    font-weight: bold;
+    font-size: 18px;
+}
+#locate{
+    margin-bottom: 0 !important;
+    font-weight: bold;
+    font-size: 18px;
+
+}
+.hr{
+    border-bottom: 2px solid #133831;
+}
+#yellow{
+    color:#fdc730;
+}
+.okoa{
+    font-weight: bold;
+    font-size: x-large;
+    color: #000;
+}
+.green{
+    color: #fff;
+    font-weight: bold;
+}
+.black{
+    color: #fdc730;
+}
+#comment-bg{
+    object-fit: cover;
+}
+#comment-card{
+    background-color: #133831;
+}
+#clients{
+    padding:2%;
+    font-size: 4vh;
+    text-align: center;
+    border-right: 2px solid #133831;
+    color: #133831;
+
+}
+.link-link{
+    color: #fff;
+    font-size: 2vh;
+    font-weight: 700;
+}
+.link-link:hover{
+    color: #fff;
+}
+#services-page{
+    background-color: #133831;
+    border-radius: 100% 0% 0% 100% / 44% 48% 52% 56%;
+    height: 150vh;
+}
+#order-title{
+    color: #133831;
+    font-weight: bold;
+}
+/* #contain-order{
+    background-color: #133831;
+    border-radius: 21% 79% 77% 23% / 44% 48% 52% 56% ;
+} */
+/* #form-order{
+    background-color: #fff;
+} */
+.headings{
+    color: #133831;
+    font-weight: bold;
+}
+#button-card{
+    height: 15vh;
+    padding: 3%;
+}
+#par{
+    color:  #000000;
+    font-weight: bold;
+    font-size: 4vh;
+}
+#login-buuton{
+    background-color:  #cc0000;
+    font-weight: bold;
+    font-size: 2vh;
+
+}
+i{
+    background: #3b5998;
+    color: #fff;
+    font-size: 20px;
+}
+.buttons .btn{
+    background-color: #cc0000;
+    color: #fff;
+    font-size: 14px;
+    justify-content: flex-end;
+}
+.btn{
+    background-color: #000000;
+    color: #fff;
+    padding: 2%;
+}
+.info{
+  background: #fff;
+  background: linear-gradient(to left top, #ef233c 50%, #fff 50%);
+  background: -webkit-linear-gradient(to left top,#ef233c  50%, #fff 50%);
+  /* border-radius: 15px 15px 0 0; */
+}
+.profile{
+    margin-top: 20%;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.cssmarquee {
+height: 50px;
+overflow: hidden;
+position: relative;
+}
+.cssmarquee h1 {
+position: absolute;
+color: #000000;
+width: 100%;
+height: 100%;
+margin: 0;
+line-height: 50px;
+text-align: left;
+animation: cssmarquee 3s linear infinite alternate;
+}
+@keyframes cssmarquee {
+0% {
+transform: translateX(70%);
+}
+100% {
+transform: translateX(0%);
+}}
+
+.caption {
+    font-size: 40px;
+    font-style: italic;
+  }
+  
+  .caption {
+    font-size: 20px;
+    text-align: right;
+  }
+  
+  .caption {
+    animation: cycle 15s linear infinite;
+  }
+  
+ 
